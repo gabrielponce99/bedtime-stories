@@ -8,7 +8,8 @@ public class BedtimeStories {
         Scanner inputScanner = new Scanner(System.in);
 
         System.out.println("Enter the Bedtime Story you want to read: ");
-        String fileName = inputScanner.nextLine();
+        String fileName = inputScanner.nextLine().trim().replace(" ","_").toLowerCase();
+        fileName += ".txt";
 
         int lineCount = 1;
 
